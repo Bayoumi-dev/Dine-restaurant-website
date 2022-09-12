@@ -1,3 +1,38 @@
+/* custom Fonts - League Spartan */
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@300;400;500;600;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+   /* Typography */
+   html {
+      @apply font-['League_Spartan',sans-serif] 3xl:text-[1.2rem];
+   }
+   body {
+      @apply text-secondary-ebonyClay;
+   }
+   button {
+      @apply font-semibold text-[17px] uppercase tracking-[0.156rem];
+   }
+   h1 {
+      @apply text-[32px] leading-10 tracking-tighter  font-light 
+      md:text-5xl xl:text-[80px] md:leading-snug xl:leading-none;
+   }
+   p {
+      @apply text-base font-normal md:text-xl md:leading-normal;
+   }
+   /* Reset */
+   a {
+      @apply inline-block;
+   }
+   [hidden] {
+      @apply !hidden;
+   }
+}
+@layer utilities {
+   .flex-center {
+      @apply flex items-center justify-center;
+   }
+}
