@@ -1,0 +1,7 @@
+build
+public/favicon.ico
+public/logo.png
+public/robots.txt
+src/assets
+.gitignore
+.prettierignore
