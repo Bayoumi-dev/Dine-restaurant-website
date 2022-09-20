@@ -1,18 +1,18 @@
 import { FC } from 'react'
-import HeroBg from '../assets/homepage/hero-bg-mobile.jpg'
-import HeroBgMid from '../assets/homepage/hero-bg-tablet.jpg'
-import HeroBgXl from '../assets/homepage/hero-bg-desktop.jpg'
+import heroBg from '../assets/homepage/hero-bg-mobile.jpg'
+import heroBgTablet from '../assets/homepage/hero-bg-tablet.jpg'
+import heroBgDesktop from '../assets/homepage/hero-bg-desktop.jpg'
 import Button from './Button'
 
 const HeroSection: FC = () => {
    return (
       <section className="h-[748px] md:h-[992px] xl:h-[820px] bg-primary-codGray text-white relative">
          <picture className="w-full h-56 md:h-[373px] xl:w-[1440px] xl:h-[820px] absolute xl:right-0">
-            <source media="(min-width: 1280px)" srcSet={HeroBgXl} />
-            <source media="(min-width: 768px)" srcSet={HeroBgMid} />
+            <source media="(min-width: 1280px)" srcSet={heroBgDesktop} />
+            <source media="(min-width: 768px)" srcSet={heroBgTablet} />
             <img
                className="mx-auto xl:w-full xl:h-full"
-               src={HeroBg}
+               src={heroBg}
                alt="hero background"
             />
          </picture>

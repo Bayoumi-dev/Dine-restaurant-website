@@ -36,6 +36,12 @@ module.exports = {
             '2xl': em(1400),
             '3xl': em(1600),
          },
+         backgroundImage: {
+            divide: "url('/src/assets/patterns/pattern-divide.svg')",
+          },
+          boxShadow: {
+            '3xl': '0px 75px 100px -50px rgba(56, 66, 85, 0.503223);',
+          }
       },
    },
    plugins: [],

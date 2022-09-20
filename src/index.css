@@ -11,14 +11,17 @@
       @apply font-['League_Spartan',sans-serif] 3xl:text-[1.2rem];
    }
    body {
-      @apply text-secondary-ebonyClay;
+      @apply text-secondary-ebonyClay bg-white;
    }
    button {
       @apply font-semibold text-[17px] uppercase tracking-[0.156rem];
    }
    h1 {
-      @apply text-[32px] leading-10 tracking-tighter  font-light 
+      @apply text-[32px] leading-10 tracking-tighter font-light 
       md:text-5xl xl:text-[80px] md:leading-snug xl:leading-none;
+   }
+   h2 {
+      @apply text-[32px] leading-10 tracking-tighter font-bold;
    }
    p {
       @apply text-base font-normal md:text-xl md:leading-normal;
