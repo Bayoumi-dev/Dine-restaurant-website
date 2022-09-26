@@ -22,7 +22,8 @@ module.exports = {
             xl: em(1110),
          },
          padding: {
-            DEFAULT: '1.5em',
+            DEFAULT: '1.5rem',
+            md: '2.5rem',
             xl: '0',
          },
       },
@@ -36,12 +37,14 @@ module.exports = {
             '2xl': em(1400),
             '3xl': em(1600),
          },
+         spacing: { unset: 'unset' },
          backgroundImage: {
-            divide: "url('/src/assets/patterns/pattern-divide.svg')",
-          },
-          boxShadow: {
+            'pattern-divide': "url('/src/assets/patterns/pattern-divide.svg')",
+            'pattern-lines': "url('/src/assets/patterns/pattern-lines.svg')",
+         },
+         boxShadow: {
             '3xl': '0px 75px 100px -50px rgba(56, 66, 85, 0.503223);',
-          }
+         },
       },
    },
    plugins: [],

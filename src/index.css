@@ -21,7 +21,7 @@
       md:text-5xl xl:text-[80px] md:leading-snug xl:leading-none;
    }
    h2 {
-      @apply text-[32px] leading-10 tracking-tighter font-bold;
+      @apply text-[32px] md:text-5xl leading-10 tracking-tighter font-bold;
    }
    p {
       @apply text-base font-normal md:text-xl md:leading-normal;
