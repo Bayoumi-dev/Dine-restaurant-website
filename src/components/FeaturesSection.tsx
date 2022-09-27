@@ -1,8 +1,5 @@
 import { FC } from 'react'
-import Feature from './Feature'
-// images
-import enjoyablePlace from '../assets/homepage/enjoyable-place-desktop.jpg'
-import locallySourced from '../assets/homepage/locally-sourced-desktop.jpg'
+import Features from './Features'
 
 const FeaturesSection: FC = () => {
    return (
@@ -14,21 +11,7 @@ const FeaturesSection: FC = () => {
             xl:before:left-0 md:after:absolute md:after:w-[895px] md:after:h-[320px] md:after:bg-secondary-shuttleGray 
             md:after:opacity-[0.08] md:after:rounded-tl-[100px] md:after:bottom-0 md:after:left-1/2 
             xl:after:left-unset xl:after:right-0 overflow-hidden"></div>
-            
-         <div className="container flex flex-col xl:gap-[120px]">
-            <Feature
-               imgSrc={enjoyablePlace}
-               heading="Enjoyable place for all the family"
-               paragraph="Our relaxed surroundings make dining with us a great experience 
-               for everyone. We can even arrange a tour of the farm before your meal."
-            />
-            <Feature
-               imgSrc={locallySourced}
-               heading="The most locally sourced food"
-               paragraph="All our ingredients come directly from our farm or local fishery. 
-               So you can be sure that you’re eating the freshest, most sustainable food."
-            />
-         </div>
+            <Features />
       </section>
    )
 }
