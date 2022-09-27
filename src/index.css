@@ -23,6 +23,9 @@
    h2 {
       @apply text-[32px] md:text-5xl leading-10 tracking-tighter font-bold;
    }
+   h3 {
+      @apply text-xl font-bold tracking-tight;
+   }
    p {
       @apply text-base font-normal md:text-xl md:leading-normal;
    }
@@ -32,6 +35,13 @@
    }
    [hidden] {
       @apply !hidden;
+   }
+}
+@layer components {
+   .pattern-divide {
+      @apply pt-9 md:pt-10 xl:pt-14 relative before:absolute before:top-0 
+      before:left-0 before:w-full before:h-2 before:bg-pattern-divide 
+      before:bg-no-repeat before:bg-center xl:before:bg-left;
    }
 }
 @layer utilities {

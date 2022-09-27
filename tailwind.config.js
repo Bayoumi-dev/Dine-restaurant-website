@@ -37,13 +37,26 @@ module.exports = {
             '2xl': em(1400),
             '3xl': em(1600),
          },
-         spacing: { unset: 'unset' },
+         spacing: {
+            18: '4.5rem',
+            unset: 'unset',
+         },
+         maxWidth: {
+            unset: 'unset',
+         },
          backgroundImage: {
             'pattern-divide': "url('/src/assets/patterns/pattern-divide.svg')",
             'pattern-lines': "url('/src/assets/patterns/pattern-lines.svg')",
          },
          boxShadow: {
             '3xl': '0px 75px 100px -50px rgba(56, 66, 85, 0.503223);',
+         },
+         letterSpacing: {
+            tighter: '-0.03125em',
+            tight: '-0.0.015625em',
+         },
+         opacity: {
+            15: '.15',
          },
       },
    },
