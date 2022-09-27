@@ -18,15 +18,11 @@ const Feature: FC<Props> = ({ imgSrc, heading, paragraph }) => {
             xl:h-[720px] overflow-hidden shadow-3xl">
             <img
                src={imgSrc}
-               alt="enjoyable place"
+               alt={`${heading} Img`}
                className="w-full h-full object-cover"
             />
          </picture>
-         <div
-            className="text-center xl:text-left mt-12 md:mt-14 mb-24 md:mb-28 xl:m-0 
-            pt-9 md:pt-10 xl:pt-14 relative before:absolute before:top-0 before:left-0 
-            before:w-full before:h-2 before:bg-pattern-divide before:bg-no-repeat 
-            before:bg-center xl:before:bg-left">
+         <div className="text-center xl:text-left mt-12 md:mt-14 mb-24 md:mb-28 xl:m-0 pattern-divide">
             <h2 className="mx-auto xl:mx-0 max-w-[220px] md:max-w-xs">
                {heading}
             </h2>
