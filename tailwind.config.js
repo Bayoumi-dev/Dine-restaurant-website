@@ -39,6 +39,7 @@ module.exports = {
          },
          spacing: {
             18: '4.5rem',
+            22: '5.5rem',
             unset: 'unset',
          },
          maxWidth: {
@@ -47,6 +48,9 @@ module.exports = {
          backgroundImage: {
             'pattern-divide': "url('/src/assets/patterns/pattern-divide.svg')",
             'pattern-lines': "url('/src/assets/patterns/pattern-lines.svg')",
+            'ready-mobile': "url('/src/assets/homepage/ready-bg-mobile.jpg')",
+            'ready-tablet': "url('/src/assets/homepage/ready-bg-tablet.jpg')",
+            'ready-desktop': "url('/src/assets/homepage/ready-bg-desktop.jpg')",
          },
          boxShadow: {
             '3xl': '0px 75px 100px -50px rgba(56, 66, 85, 0.503223);',
