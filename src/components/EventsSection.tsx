@@ -9,9 +9,9 @@ const EventsSection: FC = () => {
    const [events] = useState('Family Gathering')
    return (
       <section>
-         <div className="container pt-20 pb-31 flex flex-col items-center text-center">
+         <div className="container pt-20 pb-31 md:py-30 flex flex-col items-center text-center">
             <EventImage eventsData={eventsData} events={events} />
-            <div className="">
+            <div className="w-full">
                <EventsList eventsData={eventsData} events={events} />
                <EventContent eventsData={eventsData} events={events} />
             </div>
