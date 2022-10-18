@@ -12,6 +12,7 @@ module.exports = {
             ebonyClay: '#242b37',
             shuttleGray: '#5c6779',
          },
+         gray: '#4C4C4C',
          white: '#ffffff',
          transparent: 'transparent',
       },
@@ -40,6 +41,7 @@ module.exports = {
          spacing: {
             18: '4.5rem',
             22: '5.5rem',
+            31: '7.75rem',
             unset: 'unset',
          },
          maxWidth: {
