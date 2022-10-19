@@ -6,8 +6,9 @@ interface Props extends IEventsData {}
 const EventImage: FC<Props> = ({ eventsData, events }) => {
    return (
       <div
-         className="w-[326px] h-[400px] md:w-[573px] md:h-[360px] shadow-3xl relative md:after:absolute 
-      md:after:w-[160px] md:after:h-[76px] md:after:bg-pattern-lines md:after:-top-9 md:after:-left-14 ">
+         className="w-[326px] h-[400px] md:w-[573px] md:h-[360px] xl:w-[540px] xl:h-[600px] 
+         shadow-3xl relative md:after:absolute md:after:w-[160px] md:after:h-[76px] 
+         md:after:bg-pattern-lines md:after:-top-10 md:after:-left-[38px] xl:after:-left-10 ">
          <ul className="w-full h-full overflow-hidden">
             {eventsData.map((eventData, index: number) => (
                <li className="w-full h-full" key={index}>

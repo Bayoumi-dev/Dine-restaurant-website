@@ -49,8 +49,9 @@
       @apply flex items-center justify-center;
    }
    .active-event {
-      @apply opacity-100 text-primary-codGray relative after:absolute 
-      after:w-12 after:h-[1px] after:bg-primary-beaver after:bottom-0 
-      after:left-1/2 after:-translate-x-1/2;
+      @apply opacity-100 text-primary-codGray relative after:absolute after:-z-10
+      after:w-12 xl:after:w-24 after:h-[1px] after:bg-primary-beaver after:bottom-0 
+      xl:after:bottom-1/2 after:left-1/2 xl:after:-left-32 after:-translate-x-1/2 
+      xl:after:translate-x-0 xl:after:-translate-y-1/2;
    }
 }

@@ -5,11 +5,13 @@ interface Props extends IEventsData {}
 
 const EventsList: FC<Props> = ({ eventsData, events }) => {
    return (
-      <ul className="mt-12 md:mt-14 mb-7 md:mb-12 flex flex-col md:flex-row md:justify-between md:w-full gap-y-4">
+      <ul
+         className="mt-12 md:mt-14 xl:mt-20 mb-7 md:mb-12 xl:mb-0 flex flex-col md:flex-row 
+         xl:flex-col md:justify-between md:w-full gap-y-4 xl:gap-y-3">
          {eventsData.map((eventData, index) => (
-            <li key={index} className='mx-9'>
+            <li key={index} className="mx-9 xl:mx-0">
                <button
-                  className={`text-gray opacity-50 hover:opacity-100 pb-2
+                  className={`text-gray opacity-50 hover:opacity-100 pb-2 xl:pb-0
                                         ${
                                            events === eventData.name
                                               ? 'active-event'

@@ -39,6 +39,7 @@ module.exports = {
             '3xl': em(1600),
          },
          spacing: {
+            15: '3.75rem',
             18: '4.5rem',
             22: '5.5rem',
             30: '7.5rem',
