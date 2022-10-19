@@ -6,7 +6,10 @@ import EventImage from './EventImage'
 import EventsList from './EventsList'
 
 const EventsSection: FC = () => {
-   const [events] = useState('Family Gathering')
+   const [events, setEvents] = useState('Family Gathering')
+   const changeEvents = (event: string) => setEvents(event)
+   window.addEventListener('resize', _ => setEvents('Family Gathering'))
+
    return (
       <section>
          <div
@@ -19,7 +22,11 @@ const EventsSection: FC = () => {
             xl:justify-between text-center xl:text-left">
             <EventImage eventsData={eventsData} events={events} />
             <div className="w-full xl:w-fit xl:flex xl:flex-col-reverse">
-               <EventsList eventsData={eventsData} events={events} />
+               <EventsList
+                  eventsData={eventsData}
+                  events={events}
+                  changeEvents={changeEvents}
+               />
                <EventContent eventsData={eventsData} events={events} />
             </div>
          </div>

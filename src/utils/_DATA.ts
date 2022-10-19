@@ -9,7 +9,7 @@ import socialEventsImg from '../assets/homepage/social-events-mobile.jpg'
 import socialEventsImgTab from '../assets/homepage/social-events-tablet.jpg'
 import socialEventsImgDt from '../assets/homepage/social-events-desktop.jpg'
 
-// Static data for events
+// Static data for events section
 export const eventsData = [
     {
         name: 'Family Gathering',

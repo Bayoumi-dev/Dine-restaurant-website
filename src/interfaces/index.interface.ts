@@ -4,5 +4,6 @@ export interface IEventsData {
       paragraph: string
       img: string[]
    }[],
-   events: string
+   events: string,
+   changeEvents?: (event: string) => void 
 }
