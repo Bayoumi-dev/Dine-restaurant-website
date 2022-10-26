@@ -54,6 +54,75 @@
       before:left-0 before:w-full before:h-2 before:bg-pattern-divide 
       before:bg-no-repeat before:bg-center xl:before:bg-left;
    }
+   .booking-form {
+      @apply max-w-[540px] bg-white shadow-3xl mt-22 p-8 md:p-12 flex flex-col gap-y-[34px];
+   }
+   .booking-form input {
+      @apply w-full pl-4 pb-4 text-xl placeholder:capitalize border-b border-b-silver 
+      outline-none autofill:!shadow-autofill;
+   }
+   .booking-form .label {
+      @apply text-xl font-normal;
+   }
+   .booking-form .inputs {
+      @apply flex gap-x-4;
+   }
+   .booking-form .inputs input {
+      @apply w-18 md:w-20 last:w-22 md:last:w-24;
+   }    
+   fieldset.date,
+   fieldset.time {
+      @apply md:flex justify-between items-center;
+   }
+   .booking-form .midday {
+      @apply relative;
+   }
+   .booking-form .midday input {
+      @apply w-22 md:w-24;
+   }
+   .booking-form .midday button {
+      @apply absolute top-0 left-0 w-full h-full z-10;
+   }
+   .booking-form .midday button span {
+      @apply w-5 h-5 absolute top-1 right-3
+      bg-icon-arrow bg-no-repeat bg-center -z-10;
+   }
+   .booking-form .midday ul {
+      @apply w-24 md:w-26 absolute top-[calc(100%_+_0.5rem)] 
+      left-0 z-50 bg-white shadow-2xl;
+   }
+   .booking-form .midday ul li {
+      @apply text-xl pl-10 py-3 cursor-pointer hover:bg-silver/5 transition-colors;
+   }
+   .booking-form .midday ul li[aria-selected="true"] {
+      @apply relative before:w-3 before:h-3 before:absolute before:top-1/2 before:left-4 
+      before:-translate-y-1/2 before:bg-icon-check before:bg-no-repeat before:bg-center;
+   }
+   fieldset.people {
+      @apply relative;
+   }
+   fieldset.people input[readOnly] {
+      @apply text-center font-bold tracking-tighter;
+   }
+   fieldset.people input[type='button'] {
+      @apply absolute w-4 h-6 bg-no-repeat bg-center border-none cursor-pointer;
+   }
+   fieldset.people .plus {
+      @apply bg-icon-plus right-3 md:right-7;
+   }
+   fieldset.people .minus {
+      @apply bg-icon-minus left-3 md:left-7;
+   }
+   .booking-form button[type='submit'] {
+      @apply !w-full;
+   }
+   input::-webkit-outer-spin-button,
+   input::-webkit-inner-spin-button {
+      @apply m-0 [-webkit-appearance:none];
+   }
+   input[type='number'] {
+      @apply [-moz-appearance:textfield];
+   }
 }
 
 @layer utilities {

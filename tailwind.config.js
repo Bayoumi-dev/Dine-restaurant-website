@@ -59,8 +59,13 @@ module.exports = {
             'ready-tablet': "url('/src/assets/homepage/ready-bg-tablet.jpg')",
             'ready-desktop': "url('/src/assets/homepage/ready-bg-desktop.jpg')",
             booking: "url('/src/assets/booking/hero-bg-desktop.jpg')",
+            'icon-plus': "url('/src/assets/icons/icon-plus.svg')",
+            'icon-minus': "url('/src/assets/icons/icon-minus.svg')",
+            'icon-arrow': "url('/src/assets/icons/icon-arrow.svg')", 
+            'icon-check': "url('/src/assets/icons/icon-check.svg')", 
          },
          boxShadow: {
+            '2xl': '0px 15px 25px rgba(56, 66, 85, 0.24623)',
             '3xl': '0px 75px 100px -50px rgba(56, 66, 85, 0.503223)',
             autofill: 'inset 0 0 0 100px white!important',
          },
