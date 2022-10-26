@@ -37,13 +37,25 @@
       @apply !hidden;
    }
 }
+
 @layer components {
+   .btn.primary {
+      @apply border border-white active:text-white;
+   }
+   .btn.secondary {
+      @apply bg-primary-codGray text-white hover:border border-primary-codGray;
+   }
+   .btn {
+      @apply w-[245px] h-[64px] hover:bg-white hover:text-secondary-mirage 
+      active:bg-transparent active:opacity-25;
+   }
    .pattern-divide {
       @apply pt-9 md:pt-10 xl:pt-14 relative before:absolute before:top-0 
       before:left-0 before:w-full before:h-2 before:bg-pattern-divide 
       before:bg-no-repeat before:bg-center xl:before:bg-left;
    }
 }
+
 @layer utilities {
    .flex-center {
       @apply flex items-center justify-center;
