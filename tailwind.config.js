@@ -13,6 +13,7 @@ module.exports = {
             shuttleGray: '#5c6779',
          },
          gray: '#4C4C4C',
+         silver: '#8E8E8E',
          white: '#ffffff',
          transparent: 'transparent',
       },
@@ -42,8 +43,10 @@ module.exports = {
             15: '3.75rem',
             18: '4.5rem',
             22: '5.5rem',
+            26: '6.5rem',
             30: '7.5rem',
             31: '7.75rem',
+            33: '8.25rem',
             unset: 'unset',
          },
          maxWidth: {
@@ -55,9 +58,11 @@ module.exports = {
             'ready-mobile': "url('/src/assets/homepage/ready-bg-mobile.jpg')",
             'ready-tablet': "url('/src/assets/homepage/ready-bg-tablet.jpg')",
             'ready-desktop': "url('/src/assets/homepage/ready-bg-desktop.jpg')",
+            booking: "url('/src/assets/booking/hero-bg-desktop.jpg')",
          },
          boxShadow: {
-            '3xl': '0px 75px 100px -50px rgba(56, 66, 85, 0.503223);',
+            '3xl': '0px 75px 100px -50px rgba(56, 66, 85, 0.503223)',
+            autofill: 'inset 0 0 0 100px white!important',
          },
          letterSpacing: {
             tighter: '-0.03125em',
