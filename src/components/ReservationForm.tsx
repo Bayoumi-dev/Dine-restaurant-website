@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import Button from './Button'
 import DateFields from './Forms/DateFields'
+import PeopleField from './Forms/PeopleField'
 import TimeFields from './Forms/TimeFields'
 
 const ReservationForm: FC = () => {
@@ -15,17 +16,7 @@ const ReservationForm: FC = () => {
          />
          <DateFields />
          <TimeFields />
-         <fieldset className="people" aria-label="">
-            <input
-               type="text"
-               name="people"
-               value="4 people"
-               aria-label="people"
-               readOnly
-            />
-            <input type="button" className="plus" />
-            <input type="button" className="minus" />
-         </fieldset>
+         <PeopleField />
          <Button content="Make Reservation" variant="secondary" type="submit" />
       </form>
    )

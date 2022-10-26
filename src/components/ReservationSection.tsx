@@ -15,7 +15,7 @@ const ReservationSection: FC = () => {
             className="container pt-33 md:pt-40 xl:pt-64 flex flex-col items-center xl:flex-row 
             xl:items-start xl:justify-between">
             <ReservationHeading />
-            <div className="relative">
+            <div className="w-full max-w-[540px] relative">
                <div
                   className="xl:after:absolute xl:after:w-[160px] xl:after:h-[76px] 
                   xl:after:bg-pattern-lines xl:after:-bottom-6 xl:after:-left-20 xl:after:-z-10"></div>

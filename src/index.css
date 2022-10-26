@@ -55,7 +55,7 @@
       before:bg-no-repeat before:bg-center xl:before:bg-left;
    }
    .booking-form {
-      @apply w-full max-w-[540px] bg-white shadow-3xl p-8 md:p-12 flex flex-col gap-y-[34px];
+      @apply w-full bg-white shadow-3xl p-8 md:p-12 flex flex-col gap-y-[34px];
    }
    .booking-form input {
       @apply w-full pl-4 pb-4 text-xl placeholder:capitalize border-b border-b-silver 
