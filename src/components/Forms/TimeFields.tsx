@@ -45,7 +45,7 @@ const TimeFields: FC = () => {
                   role="listbox"
                   aria-labelledby="midday"
                   tabIndex={-1}
-                  className='invisible'>
+                  className='invisible opacity-0'>
                   <li
                      role="option"
                      aria-checked='true'

@@ -20,6 +20,7 @@ module.exports = {
       container: {
          center: true,
          screens: {
+            md: em(768),
             lg: em(992),
             xl: em(1110),
          },

@@ -6,9 +6,9 @@ const Header: FC = () => {
    return (
       <header
          className={`absolute ${
-            isHome ? 'top-[236px]' : 'top-14'
-         } md:top-[373px] xl:top-16 z-10 w-full`}>
-         <div className="container text-center xl:text-left">
+            isHome ? 'top-[236px] md:top-[373px]' : 'top-14'
+         } xl:top-16 z-10 w-full`}>
+         <div className={`container text-center ${!isHome && 'md:text-left'} xl:text-left`}>
             <a href="/" className="w-20 h-8 md:w-[103px] md:h-10">
                <img src={Logo} alt="Logo" />
             </a>
