@@ -105,7 +105,7 @@
       @apply text-center font-bold tracking-tighter;
    }
    fieldset.people input[type='button'] {
-      @apply absolute w-4 h-6 bg-no-repeat bg-center border-none cursor-pointer;
+      @apply absolute w-4 h-6 bg-no-repeat bg-center border-none cursor-pointer active:opacity-40;
    }
    fieldset.people .plus {
       @apply bg-icon-plus right-3 md:right-7;
