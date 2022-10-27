@@ -3,29 +3,6 @@ import { FC, useState } from 'react'
 const PeopleField: FC = () => {
    const [people, setPeople] = useState(4)
 
-   const handlePlusBtn = (e: any) => {
-      if (people < 99) {
-         setPeople(people + 1)
-         e.target.setAttribute('aria-label', 'One has been added')
-         setTimeout(
-            () => e.target.setAttribute('aria-label', 'add one person'),
-            100
-         )
-      }
-   }
-   const handleMinusBtn = (e: any) => {
-      if (people > 1) {
-         setPeople(people - 1)
-         e.target.setAttribute('aria-label', 'One has been removed')
-         setTimeout(
-            () => e.target.setAttribute('aria-label', 'remove one person'),
-            100
-         )
-      } else {
-         e.preventDefault()
-      }
-   }
-
    return (
       <fieldset className="people" aria-label="">
          <input
@@ -39,7 +16,7 @@ const PeopleField: FC = () => {
          <input
             type="button"
             aria-label="add one person"
-            onClick={handlePlusBtn}
+            onClick={() => setPeople(people < 99 ? people + 1 : people)}
             className={`plus ${
                people === 99 ? '!cursor-default active:!opacity-100' : ''
             }`}
@@ -47,7 +24,7 @@ const PeopleField: FC = () => {
          <input
             type="button"
             aria-label="remove one person"
-            onClick={handleMinusBtn}
+            onClick={() => setPeople(people > 1 ? people - 1 : people)}
             className={`minus ${
                people === 1 ? '!cursor-default active:!opacity-100' : ''
             }`}
