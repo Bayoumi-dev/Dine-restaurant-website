@@ -45,3 +45,6 @@ export interface IFieldProps {
    setMidday?: (midday: 'AM' | 'PM') => void
    setPeople?: (people: number) => void
 }
+export interface IReservedMsgProps {
+   values: IValues
+}

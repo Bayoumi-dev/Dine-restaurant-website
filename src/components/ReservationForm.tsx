@@ -12,6 +12,7 @@ import {
 } from '../Helpers/validation'
 import Form from './Forms/Form'
 import { IFormState, IValues, IErrorMsg } from '../interfaces/index.interface'
+import ReservedMessage from './ReservedMessage'
 
 const initialState = {
    status: 'idle',
@@ -169,33 +170,43 @@ const ReservationForm: FC = () => {
       }))
 
    return (
-      <Form handleSubmit={handleSubmit}>
-         <Field
-            name="name"
-            handleChange={handleChange}
-            values={values}
-            errorMsg={errorMsg}
-         />
-         <Field
-            name="email"
-            handleChange={handleChange}
-            values={values}
-            errorMsg={errorMsg}
-         />
-         <DateFields
-            handleChange={handleChange}
-            values={values}
-            errorMsg={errorMsg}
-         />
-         <TimeFields
-            handleChange={handleChange}
-            values={values}
-            errorMsg={errorMsg}
-            setMidday={setMidday}
-         />
-         <PeopleField values={values} setPeople={setPeople} />
-         <Button content="Make Reservation" variant="secondary" type="submit" />
-      </Form>
+      <>
+         {status === 'submitted' ? (
+            <ReservedMessage values={values} />
+         ) : (
+            <Form handleSubmit={handleSubmit}>
+               <Field
+                  name="name"
+                  handleChange={handleChange}
+                  values={values}
+                  errorMsg={errorMsg}
+               />
+               <Field
+                  name="email"
+                  handleChange={handleChange}
+                  values={values}
+                  errorMsg={errorMsg}
+               />
+               <DateFields
+                  handleChange={handleChange}
+                  values={values}
+                  errorMsg={errorMsg}
+               />
+               <TimeFields
+                  handleChange={handleChange}
+                  values={values}
+                  errorMsg={errorMsg}
+                  setMidday={setMidday}
+               />
+               <PeopleField values={values} setPeople={setPeople} />
+               <Button
+                  content="Make Reservation"
+                  variant="secondary"
+                  type="submit"
+               />
+            </Form>
+         )}
+      </>
    )
 }
 

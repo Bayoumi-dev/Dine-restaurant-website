@@ -55,7 +55,7 @@
       before:bg-no-repeat before:bg-center xl:before:bg-left;
    }
    .booking-form {
-      @apply w-full bg-white shadow-3xl p-8 md:p-12 flex flex-col;
+      @apply w-full flex flex-col;
    }
    .booking-form > *:not(button) {
       @apply mb-[34px];
@@ -68,7 +68,7 @@
       @apply text-xl font-normal;
    }
    .booking-form .inputs {
-      @apply flex gap-x-4;
+      @apply flex gap-4 flex-wrap xs:flex-nowrap;
    }
    .booking-form .inputs input {
       @apply w-18 md:w-20 last:w-22 md:last:w-24;

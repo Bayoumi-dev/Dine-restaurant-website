@@ -69,6 +69,9 @@ module.exports = {
             'icon-arrow': "url('/src/assets/icons/icon-arrow.svg')",
             'icon-check': "url('/src/assets/icons/icon-check.svg')",
          },
+         content: {
+            'done-icon': 'url("/src/assets/icons/icon-done.svg")',
+          },
          boxShadow: {
             '2xl': '0px 15px 25px rgba(56, 66, 85, 0.24623)',
             '3xl': '0px 75px 100px -50px rgba(56, 66, 85, 0.503223)',

@@ -5,7 +5,7 @@ const Form: FC<IForm> = ({ children, handleSubmit }) => {
    return (
       <form
          onSubmit={handleSubmit}
-         className="booking-form mt-22 md:mt-9 xl:mt-0"
+         className="booking-form"
          aria-label="Reservations form">
          {children}
       </form>
