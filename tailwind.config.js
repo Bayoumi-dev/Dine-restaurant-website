@@ -15,6 +15,7 @@ module.exports = {
          gray: '#4C4C4C',
          silver: '#8E8E8E',
          white: '#ffffff',
+         error: '#B54949',
          transparent: 'transparent',
       },
       container: {
@@ -53,6 +54,9 @@ module.exports = {
          maxWidth: {
             unset: 'unset',
          },
+         fontSize: {
+            xxs: '0.625rem',
+         },
          backgroundImage: {
             'pattern-divide': "url('/src/assets/patterns/pattern-divide.svg')",
             'pattern-lines': "url('/src/assets/patterns/pattern-lines.svg')",
@@ -62,8 +66,8 @@ module.exports = {
             booking: "url('/src/assets/booking/hero-bg-desktop.jpg')",
             'icon-plus': "url('/src/assets/icons/icon-plus.svg')",
             'icon-minus': "url('/src/assets/icons/icon-minus.svg')",
-            'icon-arrow': "url('/src/assets/icons/icon-arrow.svg')", 
-            'icon-check': "url('/src/assets/icons/icon-check.svg')", 
+            'icon-arrow': "url('/src/assets/icons/icon-arrow.svg')",
+            'icon-check': "url('/src/assets/icons/icon-check.svg')",
          },
          boxShadow: {
             '2xl': '0px 15px 25px rgba(56, 66, 85, 0.24623)',
@@ -72,7 +76,7 @@ module.exports = {
          },
          letterSpacing: {
             tighter: '-0.03125em',
-            tight: '-0.0.015625em',
+            tight: '-0.015625em',
             widest: '0.125em',
          },
          opacity: {

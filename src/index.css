@@ -55,7 +55,10 @@
       before:bg-no-repeat before:bg-center xl:before:bg-left;
    }
    .booking-form {
-      @apply w-full bg-white shadow-3xl p-8 md:p-12 flex flex-col gap-y-[34px];
+      @apply w-full bg-white shadow-3xl p-8 md:p-12 flex flex-col;
+   }
+   .booking-form > *:not(button) {
+      @apply mb-[34px];
    }
    .booking-form input {
       @apply w-full pl-4 pb-4 text-xl placeholder:capitalize border-b border-b-silver 
@@ -69,7 +72,7 @@
    }
    .booking-form .inputs input {
       @apply w-18 md:w-20 last:w-22 md:last:w-24;
-   }    
+   }
    fieldset.date,
    fieldset.time {
       @apply md:flex justify-between items-center;
@@ -94,7 +97,7 @@
    .booking-form .midday ul li {
       @apply text-xl pl-10 py-3 cursor-pointer hover:bg-silver/5 transition-colors;
    }
-   .booking-form .midday ul li[aria-selected="true"] {
+   .booking-form .midday ul li[aria-selected='true'] {
       @apply relative before:w-3 before:h-3 before:absolute before:top-1/2 before:left-4 
       before:-translate-y-1/2 before:bg-icon-check before:bg-no-repeat before:bg-center;
    }
@@ -122,6 +125,21 @@
    }
    input[type='number'] {
       @apply [-moz-appearance:textfield];
+   }
+   .error input:not(#midday) {
+      @apply text-error border-b-error placeholder:text-error/50;
+   }
+   .error-msg {
+      @apply text-xxs tracking-tighter text-error;
+   }
+   label.error {
+      @apply mb-7;
+   }
+   label.error .error-msg {
+      @apply mt-3 pl-4;
+   }
+   fieldset.error .label {
+      @apply text-error;
    }
 }
 

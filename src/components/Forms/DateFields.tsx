@@ -1,27 +1,44 @@
 import { FC } from 'react'
+import { IFieldProps } from '../../interfaces/index.interface'
 
-const DateFields: FC = () => {
+const DateFields: FC<IFieldProps> = ({ handleChange, values, errorMsg }) => {
+   const { month, day, year } = values.date
+
    return (
-      <fieldset className="date">
+      <fieldset className={`date ${errorMsg && errorMsg.date ? 'error' : ''}`}>
          <div className="mb-2">
             <legend className="label" id="date">
                Pick a date
             </legend>
+            {errorMsg && errorMsg.date && (
+               <div className="error-msg">{errorMsg.date}</div>
+            )}
          </div>
          <div className="inputs" aria-labelledby="date" tabIndex={0}>
             <input
-               name="month"
+               name="date.month"
                type="number"
                placeholder="MM"
                aria-label="month"
-               maxLength={2}
+               onChange={handleChange}
+               value={month}
+               pattern="2"
             />
-            <input name="day" type="number" placeholder="DD" aria-label="day" />
             <input
-               name="year"
+               name="date.day"
+               type="number"
+               placeholder="DD"
+               aria-label="day"
+               onChange={handleChange}
+               value={day}
+            />
+            <input
+               name="date.year"
                type="number"
                placeholder="YYYY"
                aria-label="year"
+               onChange={handleChange}
+               value={year}
             />
          </div>
       </fieldset>

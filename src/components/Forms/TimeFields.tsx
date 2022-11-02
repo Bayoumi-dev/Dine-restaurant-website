@@ -1,10 +1,17 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { FC, useState, useEffect, useRef } from 'react'
 import listBoxBehavior from '../../Helpers/listBoxBehavior'
+import { IFieldProps } from '../../interfaces/index.interface'
 
-const TimeFields: FC = () => {
-   const [midday, setMidday] = useState<'AM' | 'PM'>('AM')
+const TimeFields: FC<IFieldProps> = ({
+   handleChange,
+   values,
+   errorMsg,
+   setMidday,
+}) => {
    const [isMiddayListOpen, setIsMiddayListOpen] = useState(false)
    const middayListRef = useRef<HTMLUListElement>(null)
+   const { hour, minute, midday } = values.time
 
    // The Mounting function
    useEffect(() => {
@@ -30,39 +37,47 @@ const TimeFields: FC = () => {
 
    const selectOption = (e: Event) => {
       const targetValue = (e.target as HTMLLIElement).dataset.value
-      if (targetValue === 'AM' || targetValue === 'PM') setMidday(targetValue)
+      if (targetValue === 'AM' || targetValue === 'PM')
+         setMidday && setMidday(targetValue)
    }
 
    return (
-      <fieldset className="time">
+      <fieldset className={`time ${errorMsg && errorMsg.time ? 'error' : ''}`}>
          <div className="mb-2">
             <legend className="label" id="time">
                Pick a time
             </legend>
+            {errorMsg && errorMsg.time && (
+               <div className="error-msg">{errorMsg.time}</div>
+            )}
          </div>
          <div className="inputs" aria-labelledby="time" tabIndex={0}>
             <input
-               name="hour"
+               name="time.hour"
                type="number"
                placeholder="09"
                aria-label="hour"
+               onChange={handleChange}
+               value={hour}
             />
             <input
-               name="minute"
+               name="time.minute"
                type="number"
                placeholder="00"
                aria-label="minute"
+               onChange={handleChange}
+               value={minute}
             />
             <div className="midday">
                <input
                   id="midday"
-                  name="midday"
+                  name="time.midday"
                   type="text"
-                  value={midday}
                   aria-label="12-hour system"
                   aria-atomic="true"
                   readOnly
                   tabIndex={-1}
+                  value={midday}
                />
                <button
                   type="button"
