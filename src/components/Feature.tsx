@@ -10,12 +10,12 @@ const Feature: FC<Props> = ({ imgSrc, heading, paragraph }) => {
    return (
       <div
          className="flex flex-col items-center xl:flex-row xl:last:flex-row-reverse xl:justify-between 
-         xl:last:-mb-20 md:last:after:absolute md:last:after:w-[160px] md:last:after:h-[76px] 
-         md:last:after:bg-pattern-lines md:last:after:top-56 xl:last:after:top-[282px] md:last:after:right-0 
-         xl:last:after:-right-[116px] xl:[&:last-of-type_picture]:!shadow-none relative">
+         xl:last:-mb-20 md:last:after:absolute md:last:after:w-40 md:last:after:h-19 
+         md:last:after:bg-pattern-lines md:last:after:top-56 xl:last:after:top-[17.625rem] md:last:after:right-0 
+         xl:last:after:-right-29 xl:[&:last-of-type_picture]:!shadow-none relative">
          <picture
-            className="w-[327px] h-[400px] md:w-[573px] md:h-[360px] xl:w-[540px] 
-            xl:h-[720px] overflow-hidden shadow-3xl">
+            className="w-[20.4375rem] h-100 md:w-[35.8125rem] md:h-90 xl:w-135 
+            xl:h-180 overflow-hidden shadow-3xl">
             <img
                src={imgSrc}
                alt={`${heading} Img`}
@@ -23,10 +23,10 @@ const Feature: FC<Props> = ({ imgSrc, heading, paragraph }) => {
             />
          </picture>
          <div className="text-center xl:text-left mt-12 md:mt-14 mb-24 md:mb-28 xl:m-0 pattern-divide">
-            <h2 className="mx-auto xl:mx-0 max-w-[220px] md:max-w-xs">
+            <h2 className="mx-auto xl:mx-0 max-w-[13.75rem] md:max-w-xs">
                {heading}
             </h2>
-            <p className="mt-4 md:mt-7 max-w-[475px] xl:max-w-[445px]">
+            <p className="mt-4 md:mt-7 max-w-[29.6875rem] xl:max-w-[27.8125rem]">
                {paragraph}
             </p>
          </div>

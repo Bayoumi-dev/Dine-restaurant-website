@@ -6,7 +6,7 @@ import locallySourced from '../assets/homepage/locally-sourced-desktop.jpg'
 
 const Features: FC = () => {
    return (
-      <div className="container flex flex-col xl:gap-[120px]">
+      <div className="container flex flex-col xl:gap-30">
          <Feature
             imgSrc={enjoyablePlace}
             heading="Enjoyable place for all the family"

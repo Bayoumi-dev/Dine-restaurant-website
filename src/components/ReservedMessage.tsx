@@ -42,9 +42,9 @@ const ReservedMessage: FC<IReservedMsgProps> = ({ values }) => {
             border-secondary-shuttleGray/50 mt-8 py-3 px-4">
             <div className="mb-1 font-medium">Reservation</div>
             <div className="text-sm md:text-base flex">
-               <div className="mr-10 md:min-w-[140px]">
+               <div className="mr-10 md:min-w-[8.75rem]">
                   <div
-                     className="max-w-[100px] md:max-w-[140px] whitespace-nowrap 
+                     className="max-w-[6.25rem] md:max-w-[8.75rem] whitespace-nowrap 
                      overflow-hidden overflow-ellipsis">
                      {name}
                   </div>

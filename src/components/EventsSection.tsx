@@ -13,10 +13,10 @@ const EventsSection: FC = () => {
    return (
       <section>
          <div
-            className="w-full max-w-[1440px] h-full absolute -z-10 md:before:absolute 
-            md:before:w-[895px] md:before:h-[320px] md:before:bg-secondary-shuttleGray 
-            md:before:opacity-[0.08] md:before:rounded-tr-[100px] md:before:top-0 
-            md:before:right-1/2 xl:before:right-unset xl:-left-[352px] overflow-hidden"></div>
+            className="w-full max-w-8xl h-full absolute -z-10 md:before:absolute 
+            md:before:w-[55.9375rem] md:before:h-80 md:before:bg-secondary-shuttleGray 
+            md:before:opacity-[0.08] md:before:rounded-tr-[6.25rem] md:before:top-0 
+            md:before:right-1/2 xl:before:right-unset xl:-left-[5,632rem] overflow-hidden"></div>
          <div
             className="container pt-20 pb-31 md:py-30 flex flex-col xl:flex-row items-center 
             xl:justify-between text-center xl:text-left">

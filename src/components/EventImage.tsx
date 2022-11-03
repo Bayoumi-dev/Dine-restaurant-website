@@ -22,9 +22,9 @@ const EventImage: FC<Props> = ({ eventsData, events }) => {
 
    return (
       <div
-         className="w-[326px] h-[400px] md:w-[573px] md:h-[360px] xl:w-[540px] xl:h-[600px] 
-         shadow-3xl relative md:after:absolute md:after:w-[160px] md:after:h-[76px] 
-         md:after:bg-pattern-lines md:after:-top-10 md:after:-left-[38px] xl:after:-left-10">
+         className="w-[20.375rem] h-100 md:w-[35.8125rem] md:h-90 xl:w-135 xl:h-150 
+         shadow-3xl relative md:after:absolute md:after:w-40 md:after:h-19 
+         md:after:bg-pattern-lines md:after:-top-10 md:after:-left-[2.375rem] xl:after:-left-10">
          <div className="w-full h-full overflow-hidden ">
             <ul
                ref={imgWrapperRef}
@@ -33,11 +33,11 @@ const EventImage: FC<Props> = ({ eventsData, events }) => {
                   <li className="w-full h-full" key={index}>
                      <picture>
                         <source
-                           media="(min-width: 1280px)"
+                           media="(min-width: 80em)"
                            srcSet={eventData.img[2]}
                         />
                         <source
-                           media="(min-width: 768px)"
+                           media="(min-width: 48em)"
                            srcSet={eventData.img[1]}
                         />
                         <img

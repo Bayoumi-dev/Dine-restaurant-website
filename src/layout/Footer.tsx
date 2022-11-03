@@ -6,7 +6,7 @@ const Footer: FC = () => {
    return (
       <footer className="bg-primary-codGray">
          <div className="container py-20 text-center md:text-left md:flex">
-            <a href="/" className="w-[103.42px] h-10">
+            <a href="/" className="w-[6.46375rem] h-10">
                <img src={Logo} alt="Logo" />
             </a>
 
