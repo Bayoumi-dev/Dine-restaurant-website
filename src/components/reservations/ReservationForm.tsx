@@ -1,17 +1,21 @@
 import { FC, ChangeEvent, FormEvent, useState, useEffect } from 'react'
-import Button from './Button'
-import Field from './Forms/Field'
-import DateFields from './Forms/DateFields'
-import PeopleField from './Forms/PeopleField'
-import TimeFields from './Forms/TimeFields'
+import Button from '../Buttons'
+import Field from '../forms/Field'
+import DateFields from '../forms/DateFields'
+import PeopleField from '../forms/PeopleField'
+import TimeFields from '../forms/TimeFields'
 import {
    checkValidName,
    checkValidEmail,
    checkValidDate,
    checkValidTime,
-} from '../Helpers/validation'
-import Form from './Forms/Form'
-import { IFormState, IValues, IErrorMsg } from '../interfaces/index.interface'
+} from '../../Helpers/validation'
+import Form from '../forms/Form'
+import {
+   IFormState,
+   IValues,
+   IErrorMsg,
+} from '../../interfaces/index.interface'
 import ReservedMessage from './ReservedMessage'
 
 const initialState = {

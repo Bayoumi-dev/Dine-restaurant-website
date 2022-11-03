@@ -1,6 +1,6 @@
 import { FC } from 'react'
-import { IEventsData } from '../interfaces/index.interface'
-import Button from './Button'
+import { IEventsData } from '../../interfaces/index.interface'
+import Button from '../Buttons'
 
 interface Props extends IEventsData {}
 

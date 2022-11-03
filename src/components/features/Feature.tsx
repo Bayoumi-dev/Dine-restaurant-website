@@ -1,12 +1,7 @@
 import { FC } from 'react'
+import { IFeature } from '../../interfaces/index.interface'
 
-interface Props {
-   imgSrc: string
-   heading: string
-   paragraph: string
-}
-
-const Feature: FC<Props> = ({ imgSrc, heading, paragraph }) => {
+const Feature: FC<IFeature> = ({ imgSrc, heading, paragraph }) => {
    return (
       <div
          className="flex flex-col items-center xl:flex-row xl:last:flex-row-reverse xl:justify-between 

@@ -1,12 +1,7 @@
 import { FC } from 'react'
+import { IHighlightItem } from '../../interfaces/index.interface'
 
-interface Props {
-   imgSrc: string
-   heading: string
-   paragraph: string
-}
-
-const HighlightItem: FC<Props> = ({ imgSrc, heading, paragraph }) => {
+const HighlightItem: FC<IHighlightItem> = ({ imgSrc, heading, paragraph }) => {
    return (
       <div
          className="flex flex-col md:flex-row items-center md:items-start h-[26.125rem] 

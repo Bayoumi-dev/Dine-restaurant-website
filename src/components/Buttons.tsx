@@ -1,13 +1,7 @@
 import { FC } from 'react'
+import { IButtonProps } from '../interfaces/index.interface'
 
-interface Props {
-   content: string
-   variant?: string
-   type?: 'button' | 'submit' | 'reset'
-   className?: string
-}
-
-const Button: FC<Props> = ({ content, variant, type, className }) => {
+const Button: FC<IButtonProps> = ({ content, variant, type, className }) => {
    return (
       <button
          type={type && type}

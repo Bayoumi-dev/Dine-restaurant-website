@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { IEventsData } from '../interfaces/index.interface'
+import { IEventsData } from '../../interfaces/index.interface'
 
 interface Props extends IEventsData {}
 

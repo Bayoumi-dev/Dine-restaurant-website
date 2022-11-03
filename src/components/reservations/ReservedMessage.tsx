@@ -1,5 +1,5 @@
 import { FC } from 'react'
-import { IReservedMsgProps } from '../interfaces/index.interface'
+import { IReservedMsgProps } from '../../interfaces/index.interface'
 
 const ReservedMessage: FC<IReservedMsgProps> = ({ values }) => {
    const { name, people, date, time } = values,

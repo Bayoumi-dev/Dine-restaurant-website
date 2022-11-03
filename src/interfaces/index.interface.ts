@@ -1,3 +1,19 @@
+export interface IButtonProps {
+   content: string
+   variant?: string
+   type?: 'button' | 'submit' | 'reset'
+   className?: string
+}
+export interface IFeature {
+   imgSrc: string
+   heading: string
+   paragraph: string
+}
+export interface IHighlightItem {
+   imgSrc: string
+   heading: string
+   paragraph: string
+}
 export interface IEventsData {
    eventsData: {
       name: string

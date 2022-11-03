@@ -1,5 +1,5 @@
 import { FC, useState } from 'react'
-import { eventsData } from '../utils/_DATA'
+import { eventsData } from '../../utils/_DATA'
 // Components
 import EventContent from './EventContent'
 import EventImage from './EventImage'

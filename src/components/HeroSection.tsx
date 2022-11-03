@@ -2,7 +2,7 @@ import { FC } from 'react'
 import heroBg from '../assets/homepage/hero-bg-mobile.jpg'
 import heroBgTablet from '../assets/homepage/hero-bg-tablet.jpg'
 import heroBgDesktop from '../assets/homepage/hero-bg-desktop.jpg'
-import Button from './Button'
+import Button from './Buttons'
 
 const HeroSection: FC = () => {
    return (
