@@ -1,9 +1,9 @@
 import { FC } from 'react'
 import HighlightItem from './HighlightItem'
 // Images
-import salmonImg from '../assets/homepage/salmon-mobile.jpg'
-import beefImg from '../assets/homepage/beef-mobile.jpg'
-import chocolateImg from '../assets/homepage/chocolate-mobile.jpg'
+import salmonImg from '../../assets/homepage/salmon-mobile.jpg'
+import beefImg from '../../assets/homepage/beef-mobile.jpg'
+import chocolateImg from '../../assets/homepage/chocolate-mobile.jpg'
 
 const HighlightItems: FC = () => {
    return (

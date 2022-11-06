@@ -2,7 +2,7 @@ import { FC, useState } from 'react'
 import Logo from '../assets/logo.svg'
 
 const Header: FC = () => {
-   const [isHome] = useState(false)
+   const [isHome] = useState(true)
    return (
       <header
          className={`absolute ${

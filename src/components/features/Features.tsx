@@ -1,8 +1,8 @@
 import { FC } from 'react'
 import Feature from './Feature'
 // images
-import enjoyablePlace from '../assets/homepage/enjoyable-place-desktop.jpg'
-import locallySourced from '../assets/homepage/locally-sourced-desktop.jpg'
+import enjoyablePlace from '../../assets/homepage/enjoyable-place-desktop.jpg'
+import locallySourced from '../../assets/homepage/locally-sourced-desktop.jpg'
 
 const Features: FC = () => {
    return (
