@@ -29,7 +29,7 @@ const HeroSection: FC = () => {
                   surroundings. Eat the freshest produce from the comfort of our
                   farmhouse.
                </p>
-               <Button content="Book a table" />
+               <Button content="Book a table" link="booking" />
             </div>
          </div>
       </section>

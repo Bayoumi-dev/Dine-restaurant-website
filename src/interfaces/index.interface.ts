@@ -3,6 +3,7 @@ export interface IButtonProps {
    variant?: string
    type?: 'button' | 'submit' | 'reset'
    className?: string
+   link?: string
 }
 export interface IFeature {
    imgSrc: string

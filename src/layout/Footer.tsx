@@ -1,14 +1,14 @@
 import { FC } from 'react'
+import { Link } from 'react-router-dom'
 import Logo from '../assets/logo.svg'
-
 
 const Footer: FC = () => {
    return (
       <footer className="bg-primary-codGray">
          <div className="container py-20 text-center md:text-left md:flex">
-            <a href="/" className="w-[6.46375rem] h-10">
+            <Link to="/" className="w-[6.46375rem] h-10">
                <img src={Logo} alt="Logo" />
-            </a>
+            </Link>
 
             <div className="uppercase text-sm leading-7 font-normal 
             text-white tracking-widest md:ml-32 xl:ml-48 xl:flex">

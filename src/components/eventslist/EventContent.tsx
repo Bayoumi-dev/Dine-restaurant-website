@@ -19,7 +19,7 @@ const EventContent: FC<Props> = ({ eventsData, events }) => {
          <div
             className="absolute bottom-0 left-1/2 xl:left-0 
             -translate-x-1/2 xl:translate-x-0">
-            <Button variant="secondary" content="Book a table" />
+            <Button variant="secondary" content="Book a table" link="booking" />
          </div>
       </div>
    )

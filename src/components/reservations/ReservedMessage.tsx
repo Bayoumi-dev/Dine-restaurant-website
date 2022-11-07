@@ -30,7 +30,7 @@ const ReservedMessage: FC<IReservedMsgProps> = ({ values }) => {
             Reserved!
          </h2>
          <p className="my-4">
-            Thank you for your interest in reserving a special event at Dine.
+            Thank you for your interest in booking a special event at Dine.
             Dine is an ideal location for group dinners and celebrations because
             of its stylish atmosphere.
             <br />
