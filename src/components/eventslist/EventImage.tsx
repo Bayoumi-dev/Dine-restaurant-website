@@ -24,7 +24,8 @@ const EventImage: FC<Props> = ({ eventsData, events }) => {
       <div
          className="w-[20.375rem] h-100 md:w-[35.8125rem] md:h-90 xl:w-135 xl:h-150 
          shadow-3xl relative md:after:absolute md:after:w-40 md:after:h-19 
-         md:after:bg-pattern-lines md:after:-top-10 md:after:-left-[2.375rem] xl:after:-left-10">
+         md:after:bg-pattern-lines md:after:bg-no-repeat md:after:-top-10 
+         md:after:-left-[2.375rem] xl:after:-left-10">
          <div className="w-full h-full overflow-hidden ">
             <ul
                ref={imgWrapperRef}

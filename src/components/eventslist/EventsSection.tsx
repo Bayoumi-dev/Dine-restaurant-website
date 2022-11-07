@@ -13,7 +13,7 @@ const EventsSection: FC = () => {
    return (
       <section>
          <div
-            className="w-full max-w-8xl h-full absolute -z-10 md:before:absolute 
+            className="w-full max-w-[1920px] h-full absolute left-2/4 -translate-x-2/4 -z-10 md:before:absolute 
             md:before:w-[55.9375rem] md:before:h-80 md:before:bg-secondary-shuttleGray 
             md:before:opacity-[0.08] md:before:rounded-tr-[6.25rem] md:before:top-0 
             md:before:right-1/2 xl:before:right-unset xl:-left-[5,632rem] overflow-hidden"></div>
