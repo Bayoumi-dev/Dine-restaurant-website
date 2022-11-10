@@ -11,7 +11,7 @@
       @apply font-['League_Spartan',sans-serif] 3xl:text-[1.2rem] scrollbar;
    }
    body {
-      @apply text-secondary-ebonyClay bg-white;
+      @apply text-secondary-ebonyClay bg-white h-full;
    }
    button,
    a {
