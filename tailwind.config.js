@@ -89,6 +89,9 @@ module.exports = {
             'icon-arrow': "url('/src/assets/icons/icon-arrow.svg')",
             'icon-check': "url('/src/assets/icons/icon-check.svg')",
          },
+         backgroundSize: {
+            '2/1': '200% 100%',
+         },
          content: {
             'done-icon': 'url("/src/assets/icons/icon-done.svg")',
          },
