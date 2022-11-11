@@ -13,12 +13,12 @@ const Footer: FC = () => {
             <div className="uppercase text-sm leading-7 font-normal 
             text-white tracking-widest md:ml-32 xl:ml-48 xl:flex">
                <div className="mt-10 mb-8 md:mt-0 xl:mb-0 xl:mr-44">
-                  <div className="">Marthwaite, Sedbergh<br />
+                  <div>Marthwaite, Sedbergh<br />
                      Cumbria</div>
-                  <div className="">+00 44 123 4567</div>
+                  <div>+00 44 123 4567</div>
                </div>
 
-               <div className="">
+               <div>
                   OPEN TIMES<br />
                   MON - FRI: 09:00 AM - 10:00 PM<br />
                   SAT - SUN: 09:00 AM - 11:30 PM<br />

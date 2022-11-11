@@ -12,7 +12,7 @@ const ReservationHeading: FC = () => {
             please feel free to call on the phone number below. We’ll be happy
             to accommodate you.
          </p>
-         <div className="">
+         <div>
             <Button content="Reserve Place" className="md:hidden" />
          </div>
       </div>

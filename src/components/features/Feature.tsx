@@ -18,7 +18,7 @@ const Feature: FC<IFeature> = ({ imgSrc, heading, paragraph }) => {
             />
          </picture>
          <div className="text-center xl:text-left mt-12 md:mt-14 mb-24 md:mb-28 xl:m-0 pattern-divide">
-            <h2 className="mx-auto xl:mx-0 max-w-[13.75rem] md:max-w-xs">
+            <h2 className="mx-auto xl:mx-0 max-w-[13.75rem] md:max-w-[21rem]">
                {heading}
             </h2>
             <p className="mt-4 md:mt-7 max-w-[29.6875rem] xl:max-w-[27.8125rem]">
