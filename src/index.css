@@ -15,14 +15,14 @@
    }
    button,
    a {
-      @apply font-semibold text-[17px] uppercase tracking-[0.156rem] inline-block;
+      @apply font-semibold text-[1.0625rem] uppercase tracking-[0.156rem] inline-block;
    }
    h1 {
-      @apply text-[32px] leading-10 tracking-tighter font-light 
-      md:text-5xl xl:text-[80px] md:leading-snug xl:leading-none;
+      @apply text-[2rem] leading-10 tracking-tighter font-light 
+      md:text-5xl xl:text-[5rem] md:leading-snug xl:leading-none;
    }
    h2 {
-      @apply text-[32px] md:text-5xl leading-10 tracking-tighter font-bold;
+      @apply text-[2rem] md:text-5xl leading-10 tracking-tighter font-bold;
    }
    h3 {
       @apply text-xl font-bold tracking-tight;
@@ -50,7 +50,7 @@
       border-primary-codGray;
    }
    .btn {
-      @apply w-[245px] h-[64px] flex-center
+      @apply w-[15.3125rem] h-16 flex-center
       hover:text-secondary-mirage active:bg-transparent active:opacity-25 duration-500;
    }
    .pattern-divide {
@@ -63,7 +63,7 @@
       @apply w-full flex flex-col;
    }
    .booking-form > *:not(button) {
-      @apply mb-[34px];
+      @apply mb-[2.125rem];
    }
    .booking-form input {
       @apply w-full pl-4 pb-4 text-xl placeholder:capitalize border-b border-b-silver 
@@ -152,7 +152,7 @@
       [scrollbar-color:theme(colors.primary.beaver)_theme(colors.white)];
    }
    .scrollbar::-webkit-scrollbar {
-      @apply max-w-[10px];
+      @apply max-w-[0.625rem];
    }
    .scrollbar::-webkit-scrollbar-track {
       @apply bg-white shadow-inner;
@@ -171,7 +171,7 @@
    }
    .active-event {
       @apply opacity-100 text-primary-codGray relative after:absolute after:-z-10
-      after:w-12 xl:after:w-24 after:h-[1px] after:bg-primary-beaver after:bottom-0 
+      after:w-12 xl:after:w-24 after:h-[0.0625rem] after:bg-primary-beaver after:bottom-0 
       xl:after:bottom-1/2 after:left-1/2 xl:after:-left-32 after:-translate-x-1/2 
       xl:after:translate-x-0 xl:after:-translate-y-1/2;
    }
