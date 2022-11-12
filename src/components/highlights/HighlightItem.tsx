@@ -5,7 +5,8 @@ const HighlightItem: FC<IHighlightItem> = ({ imgSrc, heading, paragraph }) => {
    return (
       <div
          className="flex flex-col md:flex-row items-center md:items-start h-[26.125rem] 
-         md:h-30 border-b border-b-white/15 last:border-none mb-6 last:mb-0">
+         md:h-30 border-b border-b-white/15 last:border-none mb-6 last:mb-0 
+         animate animate-slide-up xl:animate-none">
          <picture
             className="max-w-sm h-[15.3125rem] md:w-32 md:h-24 md:mr-16 relative md:after:absolute 
             md:after:top-4 md:after:-right-8 md:after:w-8 md:after:h-[0.0625rem] 

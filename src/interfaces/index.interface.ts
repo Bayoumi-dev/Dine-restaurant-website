@@ -4,6 +4,7 @@ export interface IButtonProps {
    type?: 'button' | 'submit' | 'reset'
    className?: string
    link?: string
+   onClick?: (event: React.MouseEvent<HTMLButtonElement, MouseEvent>) => void
 }
 export interface IFeature {
    imgSrc: string

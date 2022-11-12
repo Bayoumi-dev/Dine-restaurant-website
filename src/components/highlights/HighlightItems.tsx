@@ -7,7 +7,9 @@ import chocolateImg from '../../assets/homepage/chocolate-mobile.jpg'
 
 const HighlightItems: FC = () => {
    return (
-      <div className="mt-14 mx-auto xl:mx-0 max-w-[35.8125rem] xl:max-w-[33.75rem]">
+      <div
+         className="mt-14 mx-auto xl:mx-0 max-w-[35.8125rem] xl:max-w-[33.75rem]
+         animate animate-fade-in">
          <HighlightItem
             imgSrc={salmonImg}
             heading="Seared Salmon Fillet"

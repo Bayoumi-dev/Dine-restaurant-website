@@ -13,7 +13,16 @@ const ReservationHeading: FC = () => {
             to accommodate you.
          </p>
          <div>
-            <Button content="Reserve Place" className="md:hidden" />
+            <Button
+               content="Reserve Place"
+               className="md:hidden"
+               onClick={() => {
+                  (document.getElementById('reservation') as HTMLFormElement).scrollIntoView({
+                     behavior: 'smooth',
+                     block: 'end',
+                  })
+               }}
+            />
          </div>
       </div>
    )

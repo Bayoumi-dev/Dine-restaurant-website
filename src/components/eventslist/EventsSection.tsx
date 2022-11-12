@@ -19,7 +19,7 @@ const EventsSection: FC = () => {
             md:before:right-1/2 xl:before:right-unset xl:before:-left-88 overflow-hidden"></div>
          <div
             className="container pt-20 pb-31 md:py-30 flex flex-col xl:flex-row items-center 
-            xl:justify-between text-center xl:text-left">
+            xl:justify-between text-center xl:text-left animate xl:animate-slide-up">
             <EventImage eventsData={eventsData} events={events} />
             <div className="w-full xl:w-fit xl:flex xl:flex-col-reverse">
                <EventsList

@@ -8,6 +8,7 @@ const Button: FC<IButtonProps> = ({
    type,
    className,
    link,
+   onClick
 }) => {
    return link ? (
       <Link
@@ -22,6 +23,7 @@ const Button: FC<IButtonProps> = ({
    ) : (
       <button
          type={type && type}
+         onClick={onClick}
          className={`btn ${!variant ? 'primary' : 'secondary'} ${
             className ? className : ''
          }`}>

@@ -10,14 +10,16 @@ const Feature: FC<IFeature> = ({ imgSrc, heading, paragraph }) => {
          md:last:after:right-0 xl:last:after:-right-29 xl:[&:last-of-type_picture]:!shadow-none relative">
          <picture
             className="w-[20.4375rem] h-100 md:w-[35.8125rem] md:h-90 xl:w-135 
-            xl:h-180 overflow-hidden shadow-3xl">
+            xl:h-180 overflow-hidden shadow-3xl animate animate-slide-up">
             <img
                src={imgSrc}
                alt={`${heading} Img`}
                className="w-full h-full object-cover"
             />
          </picture>
-         <div className="text-center xl:text-left mt-12 md:mt-14 mb-24 md:mb-28 xl:m-0 pattern-divide">
+         <div
+            className={`text-center xl:text-left mt-12 md:mt-14 mb-24 md:mb-28 xl:m-0 pattern-divide 
+            animate animate-slide-up ${heading.includes('locally')?'xl:animate-slide-left':'xl:animate-slide-right'}`}>
             <h2 className="mx-auto xl:mx-0 max-w-[13.75rem] md:max-w-[21rem]">
                {heading}
             </h2>

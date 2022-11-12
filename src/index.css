@@ -175,4 +175,14 @@
       xl:after:bottom-1/2 after:left-1/2 xl:after:-left-32 after:-translate-x-1/2 
       xl:after:translate-x-0 xl:after:-translate-y-1/2;
    }
+   /* Animations */
+   .animate {
+      @apply ![animation-play-state:paused];
+   }
+   .animated {
+      @apply ![animation-play-state:running];
+   }
+   .animate-container {
+      @apply overflow-hidden;
+   }
 }

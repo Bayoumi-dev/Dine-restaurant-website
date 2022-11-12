@@ -26,7 +26,9 @@ const EventImage: FC<Props> = ({ eventsData, events }) => {
          shadow-3xl relative md:after:absolute md:after:w-40 md:after:h-19 
          md:after:bg-pattern-lines md:after:bg-no-repeat md:after:-top-10 
          md:after:-left-[2.375rem] xl:after:-left-10">
-         <div className="w-full h-full overflow-hidden ">
+         <div
+            className="w-full h-full overflow-hidden animate 
+            animate-slide-up xl:animate-none">
             <ul
                ref={imgWrapperRef}
                className="duration-1000 transition-transform">

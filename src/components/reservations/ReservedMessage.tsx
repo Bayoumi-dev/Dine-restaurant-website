@@ -23,7 +23,7 @@ const ReservedMessage: FC<IReservedMsgProps> = ({ values }) => {
    )
 
    return (
-      <div className="w-full">
+      <div className="w-full animate-fade-in">
          <h2
             className="flex items-center text-3xl font-semibold before:content-done-icon 
             before:mr-2 before:mt-3">

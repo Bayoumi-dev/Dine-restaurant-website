@@ -7,7 +7,8 @@ const EventsList: FC<Props> = ({ eventsData, events, changeEvents }) => {
    return (
       <ul
          className="mt-12 md:mt-14 xl:mt-20 mb-7 md:mb-12 xl:mb-0 flex flex-col md:flex-row 
-         xl:flex-col md:justify-between md:w-full gap-y-4 xl:gap-y-3">
+         xl:flex-col md:justify-between md:w-full gap-y-4 xl:gap-y-3 animate animate-slide-up 
+         xl:animate-none">
          {eventsData.map((eventData, index) => (
             <li key={index} className="mx-9 xl:mx-0">
                <button

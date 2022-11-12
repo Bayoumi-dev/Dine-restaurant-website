@@ -18,7 +18,7 @@ const Header: FC = () => {
                !isHome && 'md:text-left'
             } xl:text-left`}>
             <Link to="/" className="w-20 h-8 md:w-[6.4375rem] md:h-10">
-               <img src={Logo} alt="Logo" />
+               <img className='animate animate-fade-in' src={Logo} alt="Logo" />
             </Link>
          </div>
       </header>

@@ -1,10 +1,14 @@
-import { FC } from 'react'
+import { FC, useEffect } from 'react'
 import Header from './Header'
 import Footer from './Footer'
 import ScrollButton from './ScrollButton'
-import { Outlet } from 'react-router-dom'
+import { Outlet, useLocation } from 'react-router-dom'
+import animation from '../Helpers/animation'
 
 const Layout: FC = () => {
+   let { pathname } = useLocation()
+   useEffect(() => animation(), [pathname])
+
    return (
       <>
          <Header />

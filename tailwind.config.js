@@ -108,6 +108,74 @@ module.exports = {
          opacity: {
             15: '.15',
          },
+         animation: {
+            'fade-in': 'fadeIn 1s',
+            'slide-up': 'slideUp 1s',
+            'slide-right': 'slideRight 1s',
+            'slide-left': 'slideLeft 1s',
+            'zoom-in': 'zoomIn 1s',
+            'zoom-out': 'zoomOut 1s',
+         },
+         keyframes: {
+            fadeIn: {
+               from: {
+                  opacity: '0',
+               },
+               to: {
+                  opacity: '1',
+               },
+            },
+            slideUp: {
+               from: {
+                  opacity: '0',
+                  transform: 'translateY(4.375rem)',
+               },
+               to: {
+                  opacity: '1',
+                  transform: 'translate(0)',
+               },
+            },
+            slideRight: {
+               from: {
+                  opacity: '0',
+                  transform: 'translateX(-4.375rem)',
+               },
+               to: {
+                  opacity: '1',
+                  transform: 'translate(0)',
+               },
+            },
+            slideLeft: {
+               from: {
+                  opacity: '0',
+                  transform: 'translateX(4.375rem)',
+               },
+               to: {
+                  opacity: '1',
+                  transform: 'translate(0)',
+               },
+            },
+            zoomIn: {
+               from: {
+                  opacity: '0',
+                  transform: 'scale(0.5)',
+               },
+               to: {
+                  opacity: '1',
+                  transform: 'scale(1)',
+               },
+            },
+            zoomOut: {
+               from: {
+                  opacity: '0',
+                  transform: 'scale(1.4)',
+               },
+               to: {
+                  opacity: '1',
+                  transform: 'scale(1)',
+               },
+            },
+         },
       },
    },
    plugins: [],
