@@ -1,6 +1,6 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import { FC, useState, useEffect, useRef } from 'react'
-import listBoxBehavior from '../../Helpers/listBoxBehavior'
+import listBoxBehavior from '../../helpers/listBoxBehavior'
 import { IFieldProps } from '../../interfaces/index.interface'
 
 const TimeFields: FC<IFieldProps> = ({

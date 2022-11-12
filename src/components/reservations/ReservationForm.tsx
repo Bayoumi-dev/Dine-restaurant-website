@@ -9,7 +9,7 @@ import {
    checkValidEmail,
    checkValidDate,
    checkValidTime,
-} from '../../Helpers/validation'
+} from '../../helpers/validation'
 import Form from '../forms/Form'
 import {
    IFormState,

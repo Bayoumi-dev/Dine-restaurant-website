@@ -3,7 +3,7 @@ import Header from './Header'
 import Footer from './Footer'
 import ScrollButton from './ScrollButton'
 import { Outlet, useLocation } from 'react-router-dom'
-import animation from '../Helpers/animation'
+import animation from '../helpers/animation'
 
 const Layout: FC = () => {
    let { pathname } = useLocation()
