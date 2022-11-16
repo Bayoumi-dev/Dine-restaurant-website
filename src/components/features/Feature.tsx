@@ -7,7 +7,7 @@ const Feature: FC<IFeature> = ({ imgSrc, heading, paragraph }) => {
          className="flex flex-col items-center xl:flex-row xl:last:flex-row-reverse xl:justify-between 
          xl:last:-mb-20 md:last:after:absolute md:last:after:w-40 md:last:after:h-19 
          md:last:after:bg-pattern-lines md:last:after:bg-no-repeat md:last:after:top-56 xl:last:after:top-[17.625rem] 
-         md:last:after:right-0 xl:last:after:-right-29 xl:[&:last-of-type_picture]:!shadow-none relative">
+         md:last:after:right-0 xl:last:after:-right-18 2xl:last:after:-right-29 xl:[&:last-of-type_picture]:!shadow-none relative">
          <picture
             className="w-[20.4375rem] h-100 md:w-[35.8125rem] md:h-90 xl:w-135 
             xl:h-180 overflow-hidden shadow-3xl animate animate-slide-up">
